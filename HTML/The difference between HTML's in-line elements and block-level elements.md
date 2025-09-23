@@ -5,8 +5,9 @@ understanding the difference between inline elements and block-level elements is
 
 ## The difference and principle between in-line elements and block-level elements
 
-Block-level Elements it usually occupies an exclusive line, occupying the full available width of the parent container, and generates a line break before and after it by default. They can contain additional block-level elements or inline elements and are often used in the structural layout of a page. Typical block-level elements include <div>, <p>, <h1>~ <h6>, <ul>, <li>wait. 
-Inline Elements it does not monopolize a line, only occupies the width required by its content, and does not cause line breaks. They are typically used for formatting text and small amounts of content and cannot contain block-level elements, but can contain other inline elements. Common in-line elements are <span>,<a>,<strong>,<em>,<img>,<input>等。
+Block-level Elements it usually occupies an exclusive line, occupying the full available width of the parent container, and generates a line break before and after it by default. They can contain additional block-level elements or inline elements and are often used in the structural layout of a page. Typical block-level elements include `<div>, <p>, <h1>~ <h6>, <ul>, <li>`wait.
+
+Inline Elements it does not monopolize a line, only occupies the width required by its content, and does not cause line breaks. They are typically used for formatting text and small amounts of content and cannot contain block-level elements, but can contain other inline elements. Common in-line elements are `<span>,<a>,<strong>,<em>,<img>,<input>`等。
 行为区别主要体现在：
 - 换行：块级元素前后默认换行，行内元素不换行。
 - 宽高：块级元素可设置宽高，默认宽度为父元素宽度；行内元素宽高由内容决定，且宽高属性一般无效。
