@@ -7,18 +7,20 @@ understanding the difference between inline elements and block-level elements is
 
 Block-level Elements it usually occupies an exclusive line, occupying the full available width of the parent container, and generates a line break before and after it by default. They can contain additional block-level elements or inline elements and are often used in the structural layout of a page. Typical block-level elements include `<div>, <p>, <h1>~ <h6>, <ul>, <li>`wait.
 
-Inline Elements it does not monopolize a line, only occupies the width required by its content, and does not cause line breaks. They are typically used for formatting text and small amounts of content and cannot contain block-level elements, but can contain other inline elements. Common in-line elements are `<span>,<a>,<strong>,<em>,<img>,<input>`等。
-行为区别主要体现在：
-- 换行：块级元素前后默认换行，行内元素不换行。
-- 宽高：块级元素可设置宽高，默认宽度为父元素宽度；行内元素宽高由内容决定，且宽高属性一般无效。
-- 内容模型：块级元素能包含块级和行内元素，行内元素只能包含行内元素或文本。
-- 布局影响：块级元素形成独立的视觉区域，行内元素在文本流中嵌套排列。
-此外，通过 CSS 的display属性，元素的行为可以被修改，例如将块级元素变为行内块元素（display: inline-block）等。
+Inline Elements it does not monopolize a line, only occupies the width required by its content, and does not cause line breaks. They are typically used for formatting text and small amounts of content and cannot contain block-level elements, but can contain other inline elements. Common in-line elements are `<span>,<a>,<strong>,<em>,<img>,<input>` and so on.
+
+The main differences in behavior are reflected in the following aspects:
+- Line Breaks: Block-level elements have default line breaks before and after them, while inline elements do not cause line breaks.
+- Width and Height: The width and height of block-level elements can be set, and their default width is the same as the width of their parent element; the width and height of inline elements are determined by their content, and the width and height properties are generally ineffective for them.
+- Content Model: Block-level elements can contain both block-level elements and inline elements, while inline elements can only contain inline elements or text.
+- Impact on Layout: Block-level elements form independent visual areas, whereas inline elements are nested and arranged within the text flow.
+
+In addition, the behavior of elements can be modified through the display property in CSS. For example, a block-level element can be converted into an inline-block element by setting display: inline-block.
 
 
-## 应用场景
+## Application Scenarios
 
-合理选择块级或行内元素，有助于实现语义清晰的结构和符合预期的布局。例如，使用块级元素划分页面大结构，行内元素对文本或局部内容进行修饰。
+Choosing block-level or inline elements appropriately helps to achieve a structure with clear semantics and a layout that meets expectations. For instance, block-level elements are used to divide the main structure of a page, and inline elements are used to modify text or local content.
 
 
 ## Interview answer 
